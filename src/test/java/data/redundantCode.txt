@@ -1,0 +1,93 @@
+		/*
+		 * try (Workbook wb = new XSSFWorkbook()) { Sheet xs =
+		 * wb.createSheet("Signup_Data");
+		 * 
+		 * Row headerRow = xs.createRow(0);
+		 * 
+		 * headerRow.createCell(0).setCellValue("Email");
+		 * headerRow.createCell(1).setCellValue("Password");
+		 * headerRow.createCell(2).setCellValue("FirstName");
+		 * headerRow.createCell(3).setCellValue("ConfirmPassword");
+		 * headerRow.createCell(4).setCellValue("LastName");
+		 * headerRow.createCell(5).setCellValue("Organization");
+		 * headerRow.createCell(6).setCellValue("City");
+		 * headerRow.createCell(7).setCellValue("Designation");
+		 * 
+		 * // Generate data for multiple signup forms
+		 * 
+		 * Faker faker = new Faker(); for (int i = 0; i <= 5; i++) { // Generate random
+		 * data for each field String email = faker.internet().safeEmailAddress(); String
+		 * password = faker.internet().password(5, 5, true, true, true); String
+		 * firstName = faker.name().firstName(); String lastName =
+		 * faker.name().lastName(); String organization = faker.company().name(); String
+		 * city = faker.address().city(); String designation = faker.job().position();
+		 * 
+		 * // Fill out the signup form with fake data WebElement emailInput =
+		 * driver.findElement(By.id("signup_email")); emailInput.clear();
+		 * emailInput.sendKeys(email);
+		 * 
+		 * WebElement passwordInput = driver.findElement(By.id("signup_password"));
+		 * passwordInput.clear(); passwordInput.sendKeys(password);
+		 * 
+		 * WebElement firstNameInput = driver.findElement(By.id("signup_f_name"));
+		 * firstNameInput.clear(); firstNameInput.sendKeys(firstName);
+		 * 
+		 * WebElement confirmPasswordInput =
+		 * driver.findElement(By.id("signup_confirm_password"));
+		 * confirmPasswordInput.clear(); confirmPasswordInput.sendKeys(password);
+		 * 
+		 * WebElement lastNameInput = driver.findElement(By.id("signup_l_name"));
+		 * lastNameInput.clear(); lastNameInput.sendKeys(lastName);
+		 * 
+		 * WebElement organizationInput = driver.findElement(By.id("signup_institute"));
+		 * organizationInput.clear(); organizationInput.sendKeys(organization);
+		 * 
+		 * WebElement cityInput = driver.findElement(By.id("signup_city"));
+		 * cityInput.clear(); cityInput.sendKeys(city);
+		 * 
+		 * WebElement designationInput =
+		 * driver.findElement(By.id("signup_designation")); designationInput.clear();
+		 * designationInput.sendKeys(designation);
+		 * 
+		 * WebElement captchaCheckBox = driver.findElement(By.id("recaptcha-anchor"));
+		 * captchaCheckBox.clear(); captchaCheckBox.click();
+		 * 
+		 * WebElement agree_termCheckBox =
+		 * driver.findElement(By.id("signup_agree_term")); agree_termCheckBox.clear();
+		 * agree_termCheckBox.click();
+		 * 
+		 * // Click on the submit button WebElement submitButton =
+		 * driver.findElement(By.id("signupsubmit")); submitButton.click();
+		 * 
+		 * // Fill out the data in the Excel sheet Row dataRow = xs.createRow(i + 1);
+		 * dataRow.createCell(0).setCellValue(email);
+		 * dataRow.createCell(1).setCellValue(password);
+		 * dataRow.createCell(2).setCellValue(firstName);
+		 * dataRow.createCell(3).setCellValue(password); // Confirm password same as
+		 * password dataRow.createCell(4).setCellValue(lastName);
+		 * dataRow.createCell(5).setCellValue(organization);
+		 * dataRow.createCell(6).setCellValue(city);
+		 * dataRow.createCell(7).setCellValue(designation);
+		 * 
+		 * // Navigate back to the signup form page for the next signup
+		 * driver.navigate().back(); }
+		 * 
+		 * // Write the workbook content to a file try (FileOutputStream fileOut = new
+		 * FileOutputStream("signup_form_data.xlsx")) { wb.write(fileOut);
+		 * System.out.println("Excel file created successfully!"); } catch (IOException
+		 * e) { e.printStackTrace(); } } catch (IOException e) { e.printStackTrace(); }
+		 */
+		 
+		 		 
+//		 WebElement switchIframe = driver.findElement(By.cssSelector("iframe[title='reCAPTCHA']"));
+//		 driver.switchTo().frame(switchIframe);
+//		 wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.recaptcha-checkbox-checkmark")));
+//		 driver.findElement(By.cssSelector("div[class=recaptcha-checkbox-checkmark]")).click();
+		 
+		 
+		 
+<iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-6jretj5te0i" frameborder="0" scrolling="no"
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+   src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le6NRgpAAAAACN7r4XP2pf1cEa93hNuzGxrC2ib&amp;co=aHR0cHM6Ly93d3cuZWR2ZXJzZS5jb206NDQz&amp;hl=en&amp;v=07g0mpPGukTo20VqKa8GbTSw&amp;size=normal&amp;cb=a5cx5p6gy9qm" 
+   xpath="1">
+</iframe>
